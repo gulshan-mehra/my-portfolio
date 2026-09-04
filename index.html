@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gulshan Mehra — Unity Game Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Gulshan Mehra, Unity Game Developer with 3+ years building production-ready games, shader tools, and multiplayer systems for Animoca Brands and Cuddle Cubbies."/>
+  <meta name="keywords" content="Gulshan Mehra, Unity Developer, Game Developer, Shader Graph, Photon Fusion, Unity Asset Store, Portfolio"/>
+  <meta name="author" content="Gulshan Mehra"/>
+  <meta property="og:title" content="Gulshan Mehra — Unity Game Developer"/>
+  <meta property="og:description" content="Building gameplay systems, interactive experiences, and production-ready applications."/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="constellation-canvas"></canvas>
+
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">GULSHAN MEHRA <span class="logo-cursor">/&gt;</span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="#client-work" class="nav-link">Unity Work</a>
+      <a href="#work" class="nav-link">AI Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="./assets/Gulshan-Mehra-Resume.pdf" class="btn-resume" target="_blank" id="nav-resume-btn">Resume</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <p class="hero-label reveal">— UNITY GAME DEVELOPER PORTFOLIO</p>
+    <h1 class="hero-name reveal">GULSHAN<br>MEHRA</h1>
+    <p class="hero-title reveal">UNITY GAME DEVELOPER</p>
+    <p class="hero-tagline reveal">Building gameplay systems, interactive experiences,<br>and production-ready applications.</p>
+    <p class="hero-tech reveal">UNITY &nbsp;&middot;&nbsp; C# &nbsp;&middot;&nbsp; SHADER GRAPH &nbsp;&middot;&nbsp; PHOTON FUSION</p>
+    <div class="hero-ctas reveal">
+      <a href="#client-work" class="btn-primary" id="view-projects-btn">View Projects</a>
+      <a href="./assets/Gulshan-Mehra-Resume.pdf" class="btn-secondary" target="_blank" id="download-resume-hero-btn">Download Resume</a>
+      <a href="https://www.behance.net/gulshanmehra" class="btn-text-link" target="_blank" rel="noopener" id="behance-link">BEHANCE &#8599;</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <p>SCROLL</p>
+  </div>
+</section>
+
+
+
+<!-- 01 CLIENT DELIVERY -->
+<section id="client-work" class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <span class="section-dash">&#8212;</span>
+      <span class="section-tag">CLIENT DELIVERY</span>
+    </div>
+    <h2 class="section-title reveal">Unity Projects</h2>
+    <p class="section-sub reveal">Production games, applications, and published tools delivered for international clients and the Unity developer community.</p>
+
+    <!-- Featured Commercial -->
+    <div class="commercial-featured hud-card reveal" id="project-colorfolks">
+      <div class="commercial-feat-left">
+        <div class="confidential-banner">
+          <div class="confidential-stripe"></div>
+          <div class="confidential-text">
+            <span class="lock-icon">&#128274;</span>
+            <span>[NDA &#8212; ASSETS NOT PUBLIC]</span>
+          </div>
+        </div>
+        <div class="video-wrapper">
+          <video id="colorfolks-video" controls preload="metadata">
+            <source src="./videos/video1.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="commercial-feat-right">
+        <span class="client-badge">COMMERCIAL</span>
+        <h3 class="featured-title">ColorFolks</h3>
+        <div class="featured-stack">
+          <span class="stack-pill">Unity</span>
+          <span class="stack-pill">C#</span>
+          <span class="stack-pill">Photon Fusion</span>
+          <span class="stack-pill">Shader Graph</span>
+        </div>
+        <p class="featured-desc">
+          Multiplayer hide-and-seek game inspired by Mecha Chameleon. Players <strong>paint their characters with colours</strong> and broadcast paint patterns to all connected players in real time. Hunters identify hiders by colour.
+        </p>
+        <ul class="featured-highlights">
+          <li>Host-authoritative networking with Photon Fusion</li>
+          <li>Real-time Painting over character and broadcasting that paint to other players as well</li>
+          <li>Draw call &amp; batch optimisation for mobile</li>
+          <li>Multiplayer game state synchronisation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Commercial Grid -->
+    <div class="commercial-grid">
+      <!-- VR Engine Explorer (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-revv-racing" data-project-id="vr-engine-explorer" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Revv Racing preview and video">
+        <div class="confidential-banner sm">
+          <div class="confidential-stripe"></div>
+          <div class="confidential-text"><span>&#128274;</span><span>[CONFIDENTIAL]</span></div>
+        </div>
+        <div class="project-card-inner">
+          <span class="client-badge sm">COMMERCIAL</span>
+          <h3 class="project-name">VR Engine Explorer</h3>
+          <div class="project-stack">
+            <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span>
+            <span class="stack-pill sm">XR Plugin</span><span class="stack-pill sm">AWS S3</span><span class="stack-pill sm">Git</span>
+          </div>
+          <p class="project-desc">Interactive Meta Quest 2 VR app to inspect, disassemble, and explore a running car engine.</p>
+        </div>
+        <div class="card-action-cue">
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
+          <span class="cue-arrow">&#8599;</span>
+        </div>
+      </div>
+      <!-- UNO Five (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-revv-racing" data-project-id="uno-five" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Revv Racing preview and video">
+        <div class="confidential-banner sm">
+          <div class="confidential-stripe"></div>
+          <div class="confidential-text"><span>&#128274;</span><span>[CONFIDENTIAL]</span></div>
+        </div>
+        <div class="project-card-inner">
+          <span class="client-badge sm">COMMERCIAL</span>
+          <h3 class="project-name">UNO Five</h3>
+          <div class="project-stack">
+            <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span><span class="stack-pill sm">AWS S3</span><span class="stack-pill sm">Git</span>
+          </div>
+          <p class="project-desc">Online multiplayer Android UNO game featuring 2v2 team play, live chat, and weekly tournaments.</p>
+        </div>
+        <div class="card-action-cue">
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
+          <span class="cue-arrow">&#8599;</span>
+        </div>
+      </div>
+      <!-- Modern Closet (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-modern-closet" data-project-id="modern-closet" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Modern Closet preview and video">
+        <div class="confidential-banner sm">
+          <div class="confidential-stripe"></div>
+          <div class="confidential-text"><span>&#128274;</span><span>[CONFIDENTIAL]</span></div>
+        </div>
+        <div class="project-card-inner">
+          <span class="client-badge sm">COMMERCIAL</span>
+          <h3 class="project-name">Modern Closet</h3>
+          <div class="project-stack">
+            <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span>
+            <span class="stack-pill sm">PHP</span><span class="stack-pill sm">MySQL</span><span class="stack-pill sm">Git</span>
+          </div>
+          <p class="project-desc">Interactive WebGL tool to design, customize, and order bespoke modular closets in real time.</p>
+        </div>
+        <div class="card-action-cue">
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
+          <span class="cue-arrow">&#8599;</span>
+        </div>
+      </div>
+
+      <!-- ASAP Arcade (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-asap-arcade" data-project-id="asap-arcade" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open ASAP Arcade preview and video">
+        <div class="confidential-banner sm">
+          <div class="confidential-stripe"></div>
+          <div class="confidential-text"><span>&#128274;</span><span>[CONFIDENTIAL]</span></div>
+        </div>
+        <div class="project-card-inner">
+          <span class="client-badge sm">COMMERCIAL</span>
+          <h3 class="project-name">ASAP Arcade</h3>
+          <div class="project-stack">
+            <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span><span class="stack-pill sm">Git</span>
+          </div>
+          <p class="project-desc">Educational kids game to learn alphabets via sequential letter collection and collectible cards.</p>
+        </div>
+        <div class="card-action-cue">
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
+          <span class="cue-arrow">&#8599;</span>
+        </div>
+      </div>
+
+      <!-- Grass Shader Pack (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-grass-shader" data-project-id="grass-shader" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Grass Shader Pack preview and video">
+        <div class="project-card-inner">
+          <span class="client-badge sm store-badge">UNITY ASSET STORE</span>
+          <h3 class="project-name">Grass Shader Pack</h3>
+          <div class="project-stack">
+            <span class="stack-pill sm">Unity</span>
+            <span class="stack-pill sm">Shader Graph</span>
+            <span class="stack-pill sm">Custom HLSL</span>
+            <span class="stack-pill sm">Editor Tooling</span>
+          </div>
+          <p class="project-desc">Published on Unity Asset Store. Realistic wind-responsive grass shader with custom HLSL LOD blending and a custom Editor tool for mesh combining, object painting, and placement.</p>
+        </div>
+        <div class="card-action-cue">
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Tool Demo</span>
+          <span class="cue-arrow">&#8599;</span>
+        </div>
+      </div>
+
+      <!-- Water Shader Pack (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-water-shader" data-project-id="water-shader" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Water Shader Pack preview and video">
+        <div class="project-card-inner">
+          <span class="client-badge sm store-badge">UNITY ASSET STORE</span>
+          <h3 class="project-name">Water Shader Pack</h3>
+          <div class="project-stack">
+            <span class="stack-pill sm">Unity</span>
+            <span class="stack-pill sm">Shader Graph</span>
+            <span class="stack-pill sm">Custom HLSL</span>
+          </div>
+          <p class="project-desc">Published on Unity Asset Store. Production-ready real-time water shader built with Shader Graph and custom HLSL for realistic water surface rendering.</p>
+        </div>
+        <div class="card-action-cue">
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
+          <span class="cue-arrow">&#8599;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 SELECTED WORK -->
+<section id="work" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <span class="section-dash">&#8212;</span>
+      <span class="section-tag">SELECTED WORK</span>
+    </div>
+    <h2 class="section-title reveal">AI Projects</h2>
+    <p class="section-sub reveal">Self-initiated builds exploring new technologies and creative ideas.</p>
+
+    <!-- Featured RAG -->
+    <div class="featured-project hud-card reveal" id="featured-rag">
+      <div class="featured-left">
+        <div class="image-wrapper">
+          <img src="./images/image1.png" alt="Featured image">
+        </div>
+        <div class="img-tech-diagram">
+          <div class="diagram-label">ARCHITECTURE</div>
+          <div class="diagram-nodes">
+            <div class="diagram-node">FastAPI</div>
+            <div class="diagram-arrow">&#8594;</div>
+            <div class="diagram-node">Qdrant</div>
+            <div class="diagram-arrow">&#8594;</div>
+            <div class="diagram-node">Qwen 2.5 7B</div>
+            <div class="diagram-arrow">&#8594;</div>
+            <div class="diagram-node">PostgreSQL</div>
+          </div>
+        </div>
+      </div>
+      <div class="featured-right">
+        <span class="featured-badge">&#8212; FEATURED PERSONAL PROJECT</span>
+        <h3 class="featured-title">RAG Document Q&amp;A System</h3>
+        <div class="featured-stack">
+          <span class="stack-pill">Python</span>
+          <span class="stack-pill">FastAPI</span>
+          <span class="stack-pill">Qdrant</span>
+          <span class="stack-pill">PostgreSQL</span>
+          <span class="stack-pill">Qwen 2.5 7B</span>
+        </div>
+        <p class="featured-desc">
+          A full-stack <strong>Retrieval-Augmented Generation</strong> system running a local Qwen 2.5 7B LLM &#8212; no cloud API costs. Users can register, log in, upload documents, and ask contextual questions. Vector search powered by Qdrant; PostgreSQL manages users and metadata; exposed via a FastAPI REST layer.
+        </p>
+        <ul class="featured-highlights">
+          <li>Local Qwen 2.5 7B LLM via llama.cpp REST interface</li>
+          <li>Vector search with Qdrant embedding store</li>
+          <li>FastAPI backend with full user authentication</li>
+          <li>PostgreSQL for user &amp; document management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <span class="section-dash">&#8212;</span>
+      <span class="section-tag">PRODUCTION EXPERIENCE</span>
+    </div>
+    <h2 class="section-title reveal">Work Experience</h2>
+
+    <div class="job-card hud-card reveal" id="job-chicmic">
+      <div class="job-header">
+        <div class="job-meta">
+          <h3 class="job-title">Unity Software Engineer</h3>
+          <p class="job-company">@ Chicmic &middot; Mohali, India</p>
+          <p class="job-dates">09/2023 &#8212; Present</p>
+        </div>
+        <div class="job-metric"><div class="metric-value">3+</div><div class="metric-label">Years Experience</div></div>
+      </div>
+      <p class="job-summary">Developing scalable Unity 3D applications for international clients including <strong>Animoca Brands</strong> and <strong>Cuddle Cubbies</strong>. Leading gameplay systems, shader development, UI design, and mobile optimisation across multiple shipped titles.</p>
+      <div class="job-pills">
+        <span class="stack-pill">Unity3D</span><span class="stack-pill">C#</span>
+        <span class="stack-pill">Shader Graph</span><span class="stack-pill">Photon Fusion</span>
+        <span class="stack-pill">REST APIs</span><span class="stack-pill">AWS S3</span>
+        <span class="stack-pill">Blockchain</span><span class="stack-pill">Git</span>
+      </div>
+      <div class="job-breakdown">
+        <div class="breakdown-col">
+          <div class="breakdown-title">GAMEPLAY &amp; SYSTEMS</div>
+          <ul class="breakdown-list">
+            <li>Modular architecture &amp; OOP design</li>
+            <li>Classic &amp; New Input System</li>
+            <li>Real-time multiplayer (Photon Fusion)</li>
+            <li>Object pooling &amp; state management</li>
+            <li>Shader Graph &amp; custom HLSL VFX</li>
+          </ul>
+        </div>
+        <div class="breakdown-col">
+          <div class="breakdown-title">QUALITY &amp; PERFORMANCE</div>
+          <ul class="breakdown-list">
+            <li>Draw call &amp; batch optimisation</li>
+            <li>Unity Profiler &amp; Frame Debugger</li>
+            <li>Mobile-targeted rendering pipeline</li>
+            <li>Asset Store package maintenance</li>
+            <li>Memory profiling &amp; GC tuning</li>
+          </ul>
+        </div>
+        <div class="breakdown-col">
+          <div class="breakdown-title">BACKEND &amp; DELIVERY</div>
+          <ul class="breakdown-list">
+            <li>REST API integration (UnityWebRequest)</li>
+            <li>JSON Save/Load (Newtonsoft)</li>
+            <li>PHP + MySQL backend integration</li>
+            <li>AWS S3 + Blockchain asset pipeline</li>
+            <li>Agile / Scrum delivery</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="job-card hud-card reveal" id="job-offsureit">
+      <div class="job-header">
+        <div class="job-meta">
+          <h3 class="job-title">Unity 3D Developer</h3>
+          <p class="job-company">@ OffsureIT &middot; Mohali, India</p>
+          <p class="job-dates">09/2022 &#8212; 09/2023</p>
+        </div>
+        <div class="job-metric"><div class="metric-value">1yr</div><div class="metric-label">Duration</div></div>
+      </div>
+      <p class="job-summary">Delivered Unity 3D applications for Android &amp; Standalone platforms using structured, reusable systems. Built procedural shaders and debugged device-specific issues in an Agile workflow.</p>
+      <div class="job-pills">
+        <span class="stack-pill">Unity3D</span><span class="stack-pill">C#</span>
+        <span class="stack-pill">Shader Graph</span><span class="stack-pill">Android</span>
+        <span class="stack-pill">Git</span><span class="stack-pill">Agile</span>
+      </div>
+      <div class="job-breakdown">
+        <div class="breakdown-col">
+          <div class="breakdown-title">DEVELOPMENT</div>
+          <ul class="breakdown-list">
+            <li>Unity 3D Android &amp; Standalone builds</li>
+            <li>Gameplay logic &amp; input mapping</li>
+            <li>UI navigation flow design</li>
+          </ul>
+        </div>
+        <div class="breakdown-col">
+          <div class="breakdown-title">SHADERS &amp; VFX</div>
+          <ul class="breakdown-list">
+            <li>Procedural water material (Shader Graph)</li>
+            <li>Basic blur post-process shader</li>
+            <li>Custom HLSL experiments</li>
+          </ul>
+        </div>
+        <div class="breakdown-col">
+          <div class="breakdown-title">COLLABORATION</div>
+          <ul class="breakdown-list">
+            <li>Git-based team workflow</li>
+            <li>Device-specific bug debugging</li>
+            <li>Agile sprint participation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 SKILLS -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">04</span>
+      <span class="section-dash">&#8212;</span>
+      <span class="section-tag">TECHNICAL ARSENAL</span>
+    </div>
+    <h2 class="section-title reveal">Technical Arsenal</h2>
+    <div class="skills-grid">
+      <div class="skill-card hud-card reveal" id="skill-game-dev">
+        <h3 class="skill-cat">Game Development</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Unity3D (2019+)</span><span class="skill-pill">Unity2D</span>
+          <span class="skill-pill">Shader Graph</span><span class="skill-pill">Gameplay Mechanics</span>
+          <span class="skill-pill">Object Pooling</span><span class="skill-pill">Input Systems</span>
+          <span class="skill-pill">UI / UX Integration</span><span class="skill-pill">Animation Systems</span>
+          <span class="skill-pill">VFX</span><span class="skill-pill">Editor Tooling</span>
+          <span class="skill-pill">Asset Store Publishing</span>
+        </div>
+      </div>
+      <div class="skill-card hud-card reveal" id="skill-languages">
+        <h3 class="skill-cat">Languages &amp; Core Concepts</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">C#</span><span class="skill-pill">.NET</span>
+          <span class="skill-pill">HLSL / ShaderLab</span><span class="skill-pill">Python</span>
+          <span class="skill-pill">PHP</span><span class="skill-pill">OOP Design</span>
+          <span class="skill-pill">Design Patterns</span><span class="skill-pill">Data Structures</span>
+          <span class="skill-pill">Event-Driven Programming</span>
+        </div>
+      </div>
+      <div class="skill-card hud-card reveal" id="skill-multiplayer">
+        <h3 class="skill-cat">Networking &amp; Multiplayer</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Photon Fusion</span><span class="skill-pill">Mirror</span>
+          <span class="skill-pill">Host-Authoritative</span><span class="skill-pill">State Synchronisation</span>
+          <span class="skill-pill">REST APIs</span><span class="skill-pill">UnityWebRequest</span>
+          <span class="skill-pill">JSON / XML</span>
+        </div>
+      </div>
+      <div class="skill-card hud-card reveal" id="skill-tools">
+        <h3 class="skill-cat">Tools, SDKs &amp; Backend</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Git / GitHub / GitLab</span><span class="skill-pill">Firebase</span>
+          <span class="skill-pill">AdMob</span><span class="skill-pill">Google Play Games</span>
+          <span class="skill-pill">Unity Ads</span><span class="skill-pill">AWS S3</span>
+          <span class="skill-pill">Blockchain</span><span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">PostgreSQL</span><span class="skill-pill">Qdrant</span>
+          <span class="skill-pill">MySQL</span><span class="skill-pill">Blender</span>
+          <span class="skill-pill">DoTween</span><span class="skill-pill">TextMeshPro</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 PROCESS -->
+<section id="process" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">05</span>
+      <span class="section-dash">&#8212;</span>
+      <span class="section-tag">PROCESS</span>
+    </div>
+    <h2 class="section-title reveal">How I Build Games</h2>
+    <div class="process-timeline">
+      <div class="process-step reveal" id="process-step-1"><div class="step-num">01</div><div class="step-body"><h4 class="step-title">Concept &amp; Scope</h4><p class="step-desc">Define the game loop, core mechanics, and technical constraints. Break requirements into modular systems.</p></div></div>
+      <div class="process-step reveal" id="process-step-2"><div class="step-num">02</div><div class="step-body"><h4 class="step-title">Architecture Design</h4><p class="step-desc">Plan using OOP, design patterns (Observer, State, Object Pool), and scalable component design.</p></div></div>
+      <div class="process-step reveal" id="process-step-3"><div class="step-num">03</div><div class="step-body"><h4 class="step-title">Core Gameplay Systems</h4><p class="step-desc">Implement mechanics, input systems, physics interactions, and state machines. Test early and often.</p></div></div>
+      <div class="process-step reveal" id="process-step-4"><div class="step-num">04</div><div class="step-body"><h4 class="step-title">Visual Integration</h4><p class="step-desc">Integrate Shader Graph effects, animations, VFX, and assets. Build responsive UI with TextMeshPro &amp; DoTween.</p></div></div>
+      <div class="process-step reveal" id="process-step-5"><div class="step-num">05</div><div class="step-body"><h4 class="step-title">Debugging &amp; QA</h4><p class="step-desc">Systematic debugging with Unity's built-in tools, device testing across Android/WebGL/Standalone.</p></div></div>
+      <div class="process-step reveal" id="process-step-6"><div class="step-num">06</div><div class="step-body"><h4 class="step-title">Performance Profiling</h4><p class="step-desc">Profiler, Frame Debugger, build reports &#8212; analyse draw calls, batching, GC allocs, and memory.</p></div></div>
+      <div class="process-step reveal" id="process-step-7"><div class="step-num">07</div><div class="step-body"><h4 class="step-title">Polish &amp; Optimisation</h4><p class="step-desc">Micro-animations, audio feedback, UI polish. Optimise shaders, reduce overdraw, tune GC.</p></div></div>
+      <div class="process-step reveal" id="process-step-8"><div class="step-num">08</div><div class="step-body"><h4 class="step-title">Ship</h4><p class="step-desc">Build and deploy for target platforms. Maintain with hotfixes, analytics feedback, and iterative updates.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 ENGINEERING NOTES -->
+<section id="engineering" class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">06</span>
+      <span class="section-dash">&#8212;</span>
+      <span class="section-tag">ENGINEERING NOTES</span>
+    </div>
+    <h2 class="section-title reveal">Engineering Notes</h2>
+    <p class="section-sub reveal">Technical deep-dives from real project challenges.</p>
+    <div class="accordion" id="engineering-accordion">
+      <div class="accordion-item reveal" id="eng-note-shader">
+        <button class="accordion-toggle" aria-expanded="false">
+          <span class="acc-num">01</span>
+          <span class="acc-title">Custom Grass Shader: HLSL + Editor Tool System</span>
+          <span class="acc-arrow">&#8250;</span>
+        </button>
+        <div class="accordion-body">
+          <p>For the Grass Shader Pack, pure Shader Graph wasn't sufficient for wind animation quality. I wrote custom HLSL subgraphs for per-vertex wind displacement with LOD-aware blending. The editor tool was built as a custom EditorWindow &#8212; users can switch between "paint" mode (raycast-based placement) and "combine" mode (static mesh merging for draw call reduction). The UI mirrors Unity's terrain tools to keep the workflow familiar.</p>
+        </div>
+      </div>
+      <div class="accordion-item reveal" id="eng-note-multiplayer">
+        <button class="accordion-toggle" aria-expanded="false">
+          <span class="acc-num">02</span>
+          <span class="acc-title">Real-Time Paint Synchronisation in ColorFolks (Photon Fusion)</span>
+          <span class="acc-arrow">&#8250;</span>
+        </button>
+        <div class="accordion-body">
+          <p>The core challenge in ColorFolks was synchronising shader paint data across all clients with minimal bandwidth. Paint events are sent as compressed delta payloads over Photon RPCs, and the local Shader Graph reads from a Render Texture updated each frame. Host-authoritative validation prevents cheating, while client-side prediction keeps paint feel instant. On mobile, paint mesh updates are batched to avoid per-frame draw call spikes.</p>
+        </div>
+      </div>
+      <div class="accordion-item reveal" id="eng-note-mobile-perf">
+        <button class="accordion-toggle" aria-expanded="false">
+          <span class="acc-num">03</span>
+          <span class="acc-title">Mobile Optimisation: Draw Calls &amp; Batch Analysis</span>
+          <span class="acc-arrow">&#8250;</span>
+        </button>
+        <div class="accordion-body">
+          <p>On ColorFolks' mobile build, initial profiling showed 400+ draw calls per frame. Using the Frame Debugger and Profiler GPU timeline, I identified heavy overdraw from the paint shader system and unsorted transparent geometry. Solutions: GPU instancing on character meshes, texture atlasing for UI, and sorting layer re-ordering. Final build hit under 120 draw calls &#8212; smooth 60fps on mid-range Android.</p>
+        </div>
+      </div>
+      <div class="accordion-item reveal" id="eng-note-rag">
+        <button class="accordion-toggle" aria-expanded="false">
+          <span class="acc-num">04</span>
+          <span class="acc-title">Building a Local RAG Pipeline with Qwen 2.5 7B</span>
+          <span class="acc-arrow">&#8250;</span>
+        </button>
+        <div class="accordion-body">
+          <p>The RAG Document Q&amp;A system runs entirely locally. Documents are chunked, embedded using a sentence transformer, and stored in Qdrant. On query, the top-k relevant chunks are injected as context into the Qwen 2.5 7B prompt via llama.cpp's REST interface. FastAPI handles auth and query routing. PostgreSQL manages users and metadata.</p>
+        </div>
+      </div>
+      <div class="accordion-item reveal" id="eng-note-input">
+        <button class="accordion-toggle" aria-expanded="false">
+          <span class="acc-num">05</span>
+          <span class="acc-title">Unity New Input System: Controller-Based UI Navigation</span>
+          <span class="acc-arrow">&#8250;</span>
+        </button>
+        <div class="accordion-body">
+          <p>Migrating from Classic Input Manager to Unity's New Input System required rebuilding the entire UI navigation layer. I created a centralised InputManager singleton broadcasting input events, then built a custom SelectionNavigator for UI panels. Joystick/D-pad navigation uses Unity's EventSystem with custom navigation overrides per panel &#8212; seamless keyboard/mouse/controller switching at runtime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">07</span>
+      <span class="section-dash">&#8212;</span>
+      <span class="section-tag">ABOUT</span>
+    </div>
+    <h2 class="section-title reveal">About</h2>
+    <div class="about-grid">
+      <div class="about-bio reveal">
+        <p>I'm <strong>Gulshan Mehra</strong>, a Unity Game Developer based in <strong>Mohali, India</strong> with 3+ years of professional experience building production-ready games and interactive applications.</p>
+        <p>My work spans mobile, standalone, WebGL, and multiplayer platforms &#8212; from custom Shader Graph tools published on the Unity Asset Store to VR Based Projects created for meta quest 2. I care deeply about clean code architecture, rendering performance, and polished player experience.</p>
+        <p>Outside of professional work, I explore AI systems <br>&#8212; building a local RAG pipeline using Qwen 2.5 7B <br>&#8212; and push shader boundaries with custom HLSL experiments.<br> I hold a B.Tech in Computer Science from Punjab Technical University (CGPA: 8.2).</p>
+        <div class="about-certs">
+          <h4>Certifications</h4>
+          <ul>
+            <li>The Most Comprehensive Guide To Unity Game Development</li>
+            <li>Visual Effects for Games in Unity &#8212; Beginner To Intermediate</li>
+            <li>Master Python For Competitive Coding</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-card hud-card"><div class="stat-value">3+</div><div class="stat-label">Years Professional Experience</div></div>
+        <div class="stat-card hud-card"><div class="stat-value">4+</div><div class="stat-label">Commercial Projects Shipped</div></div>
+        <div class="stat-card hud-card"><div class="stat-value">2</div><div class="stat-label">Unity Asset Store Packages</div></div>
+        <div class="stat-card hud-card"><div class="stat-value">8.2</div><div class="stat-label">B.Tech CGPA (PTU)</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 CONTACT -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">08</span>
+      <span class="section-dash">&#8212;</span>
+      <span class="section-tag">CONTACT</span>
+    </div>
+    <h2 class="section-title reveal">Let's Build Something</h2>
+    <p class="section-sub reveal">Open to exciting Unity projects, game dev roles, and technical collaborations.</p>
+    <div class="contact-grid">
+      <a href="mailto:thegulshanmehra@gmail.com" class="contact-card hud-card reveal" id="contact-email">
+        <div class="contact-icon">&#9993;</div>
+        <div class="contact-label">EMAIL</div>
+        <div class="contact-value">thegulshanmehra@gmail.com</div>
+        <div class="contact-arrow">&#8599;</div>
+      </a>
+      <a href="https://in.linkedin.com/in/gulshan-mehra" target="_blank" rel="noopener" class="contact-card hud-card reveal" id="contact-linkedin">
+        <div class="contact-icon">in</div>
+        <div class="contact-label">LINKEDIN</div>
+        <div class="contact-value">gulshan-mehra</div>
+        <div class="contact-arrow">&#8599;</div>
+      </a>
+      <a href="https://www.behance.net/gulshanmehra" target="_blank" rel="noopener" class="contact-card hud-card reveal" id="contact-behance">
+        <div class="contact-icon">B&#275;</div>
+        <div class="contact-label">BEHANCE</div>
+        <div class="contact-value">gulshanmehra</div>
+        <div class="contact-arrow">&#8599;</div>
+      </a>
+    </div>
+    <div class="contact-cta reveal">
+      <a href="./assets/Gulshan-Mehra-Resume.pdf" class="btn-primary btn-large" target="_blank" id="download-resume-contact-btn">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container footer-inner">
+    <p class="footer-name">GULSHAN MEHRA</p>
+    <p class="footer-copy">&#169; 2026 &middot; Unity Game Developer &middot; Mohali, India</p>
+    <div class="footer-links">
+      <a href="mailto:thegulshanmehra@gmail.com">Email</a>
+      <a href="https://in.linkedin.com/in/gulshan-mehra" target="_blank">LinkedIn</a>
+      <a href="https://www.behance.net/gulshanmehra" target="_blank">Behance</a>
+    </div>
+  </div>
+</footer>
+
+  <!-- ░░ PROJECT DETAILS POPUP MODAL ░░ -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-project-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog hud-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&#10005;</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <div id="modal-badge-wrapper">
+            <span class="client-badge" id="modal-badge">CLIENT PROJECT</span>
+          </div>
+          <h2 class="modal-title" id="modal-project-title">Project Title</h2>
+          <div class="modal-stack" id="modal-stack"></div>
+        </div>
+        <div class="modal-body-grid">
+          <div class="modal-video-col">
+            <div class="video-wrapper modal-video-wrapper">
+              <video id="modal-video" controls preload="metadata" playsinline>
+                <source id="modal-video-source" src="./videos/video1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="modal-video-hint">
+              <span class="hint-dot"></span>
+              <span id="modal-video-filename">video1.mp4</span> &bull; Preview Video
+            </div>
+          </div>
+          <div class="modal-info-col">
+            <h4 class="modal-section-heading">PROJECT OVERVIEW</h4>
+            <p class="modal-description" id="modal-description"></p>
+
+            <h4 class="modal-section-heading">KEY HIGHLIGHTS</h4>
+            <ul class="modal-highlights" id="modal-highlights"></ul>
+
+            <div class="modal-actions" id="modal-actions"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
