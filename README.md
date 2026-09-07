@@ -35,6 +35,7 @@
 ### 🎨 1. ColorFolks *(Commercial Multiplayer Game)*
 - **Client / Platform:** Commercial Title &middot; Mobile (Android / iOS)
 - **Stack:** `Unity` &middot; `C#` &middot; `Photon Fusion` &middot; `Shader Graph` &middot; `Draw Call Optimization`
+- **Video Preview:** [Watch Gameplay Video on Google Drive ↗](https://drive.google.com/file/d/1uqMpY7FbMoEOjU6EFNzBlwjnsXTcVc1y/view?usp=sharing)
 - **Overview:** Multiplayer hide-and-seek game inspired by *Mecha Chameleon*. Players paint characters with colors and broadcast paint patterns to all connected players in real time.
 - **Key Technical Highlights:**
   - Designed host-authoritative networking architecture using **Photon Fusion**.
@@ -62,6 +63,7 @@
 ### 🃏 4. UNO Five *(Online Mobile Multiplayer)*
 - **Platform:** Android
 - **Stack:** `Unity` &middot; `C#` &middot; `AWS S3` &middot; `Photon / WebSockets`
+- **Video Preview:** [Watch Gameplay Video on Google Drive ↗](https://drive.google.com/file/d/1XZlO3HkTUjaygt4yTtuHcNMDPK4alrnz/view?usp=sharing)
 - **Overview:** Competitive multiplayer adaptation of UNO supporting 2v2 team play, live chat, matchmaking, and weekly tournaments.
 
 ---

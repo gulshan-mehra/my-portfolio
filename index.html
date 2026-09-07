@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gulshan Mehra — Unity Game Developer Portfolio</title>
+  <title>Gulshan Mehra — Portfolio</title>
   <meta name="description" content="Portfolio of Gulshan Mehra, Unity Game Developer with 3+ years building production-ready games, shader tools, and multiplayer systems for Animoca Brands and Cuddle Cubbies."/>
   <meta name="keywords" content="Gulshan Mehra, Unity Developer, Game Developer, Shader Graph, Photon Fusion, Unity Asset Store, Portfolio"/>
   <meta name="author" content="Gulshan Mehra"/>
@@ -40,9 +40,9 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-content">
-    <p class="hero-label reveal">— UNITY GAME DEVELOPER PORTFOLIO</p>
+    <p class="hero-label reveal">— Hi, i am</p>
     <h1 class="hero-name reveal">GULSHAN<br>MEHRA</h1>
-    <p class="hero-title reveal">UNITY GAME DEVELOPER</p>
+    <p class="hero-title reveal">ASSOCIATE UNITY DEVELOPER</p>
     <p class="hero-tagline reveal">Building gameplay systems, interactive experiences,<br>and production-ready applications.</p>
     <p class="hero-tech reveal">UNITY &nbsp;&middot;&nbsp; C# &nbsp;&middot;&nbsp; SHADER GRAPH &nbsp;&middot;&nbsp; PHOTON FUSION</p>
     <div class="hero-ctas reveal">
@@ -71,7 +71,8 @@
     <p class="section-sub reveal">Production games, applications, and published tools delivered for international clients and the Unity developer community.</p>
 
     <!-- Featured Commercial -->
-    <div class="commercial-featured hud-card reveal" id="project-colorfolks">
+    <!-- Featured Commercial -->
+    <div class="commercial-featured hud-card reveal project-card-clickable-feat" id="project-revv-racing" data-project-id="revv-racing" role="button" tabindex="0" aria-label="Open REVV Racing details">
       <div class="commercial-feat-left">
         <div class="confidential-banner">
           <div class="confidential-stripe"></div>
@@ -80,38 +81,40 @@
             <span>[NDA &#8212; ASSETS NOT PUBLIC]</span>
           </div>
         </div>
-        <div class="video-wrapper">
-          <video id="colorfolks-video" controls preload="metadata">
-            <source src="./videos/video1.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
+        <div class="image-wrapper">
+          <img src="./images/revv-racing.png" alt="Featured image">
         </div>
       </div>
       <div class="commercial-feat-right">
         <span class="client-badge">COMMERCIAL</span>
-        <h3 class="featured-title">ColorFolks</h3>
+        <h3 class="featured-title">REVV Racing</h3>
         <div class="featured-stack">
           <span class="stack-pill">Unity</span>
           <span class="stack-pill">C#</span>
-          <span class="stack-pill">Photon Fusion</span>
-          <span class="stack-pill">Shader Graph</span>
+          <span class="stack-pill">Microsoft Playfab</span>
+          <span class="stack-pill">Blockchain</span>
+          <span class="stack-pill">Addressables</span>
+          <span class="stack-pill">WebGL</span>
         </div>
         <p class="featured-desc">
-          Multiplayer hide-and-seek game inspired by Mecha Chameleon. Players <strong>paint their characters with colours</strong> and broadcast paint patterns to all connected players in real time. Hunters identify hiders by colour.
+          REVV Racing is a 3D browser-based WebGL racing title developed for Animoca Brands. The game features multiple racing tracks and competitive trophy events, each supported by its own dedicated leaderboard. It integrates Web3 functionality through Motorverse NFTs, where owning a specific car NFT grants direct access to drive and race that vehicle in the game. Work on this project included executing major data migrations to transition player accounts, game progression, and historical leaderboard records cleanly across system updates.
         </p>
+        <div class="featured-role-heading" style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--cyan); letter-spacing: 0.15em; margin: 1.25rem 0 0.5rem;">MY ROLE</div>
         <ul class="featured-highlights">
-          <li>Host-authoritative networking with Photon Fusion</li>
-          <li>Real-time Painting over character and broadcasting that paint to other players as well</li>
-          <li>Draw call &amp; batch optimisation for mobile</li>
-          <li>Multiplayer game state synchronisation</li>
+          <li>Executed data migrations for user account information, gameplay saves, and multi-track leaderboard records across project updates from Microsoft Playfab.</li>
+          <li>Maintained and verified individual leaderboard structures across different racing tracks and trophy tiers.</li>
+          <li>Profiled and resolved WebGL performance issues to ensure consistent framerates and track loading in desktop browsers with Addressable.</li>
         </ul>
       </div>
+      <div class="card-action-cue" style="grid-column: 1 / -1; margin-top: 0.5rem;">
+        <span class="cue-main"><span class="cue-icon">&#9654;</span> View Full Project Overview &amp; Details</span>
+        <a href="https://revvracing.com/" target="_blank" rel="noopener" class="card-action-btn" aria-label="Go to Modern Closet Web">Go to Web &#8599;</a>
+      </div>
     </div>
-
     <!-- Commercial Grid -->
     <div class="commercial-grid">
       <!-- VR Engine Explorer (Clickable modal tab) -->
-      <div class="project-card hud-card project-card-clickable reveal" id="project-revv-racing" data-project-id="vr-engine-explorer" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Revv Racing preview and video">
+      <div class="project-card hud-card project-card-clickable reveal" id="project-vr-engine-explorer" data-project-id="vr-engine-explorer" data-video="./videos/VR_EngineExplorer.mp4" role="button" tabindex="0" aria-label="Open VR Engine Explorer preview and video">
         <div class="confidential-banner sm">
           <div class="confidential-stripe"></div>
           <div class="confidential-text"><span>&#128274;</span><span>[CONFIDENTIAL]</span></div>
@@ -123,15 +126,16 @@
             <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span>
             <span class="stack-pill sm">XR Plugin</span><span class="stack-pill sm">AWS S3</span><span class="stack-pill sm">Git</span>
           </div>
-          <p class="project-desc">Interactive Meta Quest 2 VR app to inspect, disassemble, and explore a running car engine.</p>
+          <p class="project-desc">Interactive Meta Quest 2 VR app to inspect, hold, and examine parts of a car engine across running, open, and closed states using controllers or hands.</p>
         </div>
         <div class="card-action-cue">
-          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Details</span>
           <span class="cue-arrow">&#8599;</span>
         </div>
       </div>
+
       <!-- UNO Five (Clickable modal tab) -->
-      <div class="project-card hud-card project-card-clickable reveal" id="project-revv-racing" data-project-id="uno-five" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Revv Racing preview and video">
+      <div class="project-card hud-card project-card-clickable reveal" id="project-uno-five" data-project-id="uno-five" data-video="https://drive.google.com/file/d/1XZlO3HkTUjaygt4yTtuHcNMDPK4alrnz/view?usp=sharing" role="button" tabindex="0" aria-label="Open UNO Five preview and video">
         <div class="confidential-banner sm">
           <div class="confidential-stripe"></div>
           <div class="confidential-text"><span>&#128274;</span><span>[CONFIDENTIAL]</span></div>
@@ -140,17 +144,19 @@
           <span class="client-badge sm">COMMERCIAL</span>
           <h3 class="project-name">UNO Five</h3>
           <div class="project-stack">
-            <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span><span class="stack-pill sm">AWS S3</span><span class="stack-pill sm">Git</span>
+            <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span>
+            <span class="stack-pill sm">Photon PUN 2</span><span class="stack-pill sm">AWS S3</span><span class="stack-pill sm">Firebase</span>
           </div>
-          <p class="project-desc">Online multiplayer Android UNO game featuring 2v2 team play, live chat, and weekly tournaments.</p>
+          <p class="project-desc">Android multiplayer UNO game powered by Photon PUN 2, featuring 2v2 team matches, in-game chat, gifting, friend systems, and daily/weekly tournaments.</p>
         </div>
         <div class="card-action-cue">
-          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Details</span>
           <span class="cue-arrow">&#8599;</span>
         </div>
       </div>
+
       <!-- Modern Closet (Clickable modal tab) -->
-      <div class="project-card hud-card project-card-clickable reveal" id="project-modern-closet" data-project-id="modern-closet" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Modern Closet preview and video">
+      <div class="project-card hud-card project-card-clickable reveal" id="project-modern-closet" data-project-id="modern-closet" data-video="https://drive.google.com/file/d/1iA4f_VwuNrPTsufw4L2ioQu7KmdAIZyU/view?usp=sharing" role="button" tabindex="0" aria-label="Open Modern Closet preview and video">
         <div class="confidential-banner sm">
           <div class="confidential-stripe"></div>
           <div class="confidential-text"><span>&#128274;</span><span>[CONFIDENTIAL]</span></div>
@@ -160,18 +166,18 @@
           <h3 class="project-name">Modern Closet</h3>
           <div class="project-stack">
             <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span>
-            <span class="stack-pill sm">PHP</span><span class="stack-pill sm">MySQL</span><span class="stack-pill sm">Git</span>
+            <span class="stack-pill sm">PHP</span><span class="stack-pill sm">MySQL</span><span class="stack-pill sm">WebGL</span>
           </div>
-          <p class="project-desc">Interactive WebGL tool to design, customize, and order bespoke modular closets in real time.</p>
+          <p class="project-desc">Unity WebGL application that lets users customize, resize, and design reach-in, walk-in, and wall-unit closets in 3D, sending finalized orders to the backend.</p>
         </div>
         <div class="card-action-cue">
-          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
-          <span class="cue-arrow">&#8599;</span>
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Details</span>
+          <a href="https://modernclosetsdirect.com/closetdesign/index.html" target="_blank" rel="noopener" class="card-action-btn" aria-label="Go to Modern Closet Web">Go to Web &#8599;</a>
         </div>
       </div>
 
       <!-- ASAP Arcade (Clickable modal tab) -->
-      <div class="project-card hud-card project-card-clickable reveal" id="project-asap-arcade" data-project-id="asap-arcade" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open ASAP Arcade preview and video">
+      <div class="project-card hud-card project-card-clickable reveal" id="project-asap-arcade" data-project-id="asap-arcade" data-video="./videos/asap-arcade.mp4" role="button" tabindex="0" aria-label="Open ASAP Arcade preview and video">
         <div class="confidential-banner sm">
           <div class="confidential-stripe"></div>
           <div class="confidential-text"><span>&#128274;</span><span>[CONFIDENTIAL]</span></div>
@@ -180,18 +186,38 @@
           <span class="client-badge sm">COMMERCIAL</span>
           <h3 class="project-name">ASAP Arcade</h3>
           <div class="project-stack">
-            <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span><span class="stack-pill sm">Git</span>
+            <span class="stack-pill sm">Unity</span><span class="stack-pill sm">C#</span>
+            <span class="stack-pill sm">PHP</span><span class="stack-pill sm">Android</span><span class="stack-pill sm">Git</span>
           </div>
-          <p class="project-desc">Educational kids game to learn alphabets via sequential letter collection and collectible cards.</p>
+          <p class="project-desc">Educational Unity game with a PHP backend where kids learn the alphabet by collecting letters in order, unlocking cards, and playing across four difficulties.</p>
         </div>
         <div class="card-action-cue">
-          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
-          <span class="cue-arrow">&#8599;</span>
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Details</span>
+          <a href="https://play.google.com/store/apps/details?id=com.ASAPGaming.Label1&hl=en_IN" target="_blank" rel="noopener" class="card-action-btn" aria-label="View ASAP Arcade on Play Store">View on Play Store &#8599;</a>
+        </div>
+      </div>
+
+      <!-- Water Shader Pack (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-water-shader" data-project-id="water-shader" data-image="images/water-shader.png" role="button" tabindex="0" aria-label="Open Water Shader Pack preview and details">
+        <div class="project-card-inner">
+          <span class="client-badge sm store-badge">UNITY ASSET STORE</span>
+          <h3 class="project-name">Water Shader Pack</h3>
+          <div class="project-stack">
+            <span class="stack-pill sm">Unity</span>
+            <span class="stack-pill sm">Shader Graph</span>
+            <span class="stack-pill sm">Custom HLSL</span>
+            <span class="stack-pill sm">URP</span>
+          </div>
+          <p class="project-desc">Stylized, high-performance Unity URP water shader pack with depth-based blending, vertex displacement, and dynamic shoreline foam for mobile, desktop, and VR.</p>
+        </div>
+        <div class="card-action-cue">
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Details</span>
+          <a href="https://assetstore.unity.com/packages/vfx/shaders/water-shader-pack-326322" target="_blank" rel="noopener" class="card-action-btn" aria-label="View Water Shader Pack on Unity Asset Store">View on Asset Store &#8599;</a>
         </div>
       </div>
 
       <!-- Grass Shader Pack (Clickable modal tab) -->
-      <div class="project-card hud-card project-card-clickable reveal" id="project-grass-shader" data-project-id="grass-shader" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Grass Shader Pack preview and video">
+      <div class="project-card hud-card project-card-clickable reveal" id="project-grass-shader" data-project-id="grass-shader" data-image="images/grass-shader.png" role="button" tabindex="0" aria-label="Open Grass Shader Pack preview and details">
         <div class="project-card-inner">
           <span class="client-badge sm store-badge">UNITY ASSET STORE</span>
           <h3 class="project-name">Grass Shader Pack</h3>
@@ -200,32 +226,80 @@
             <span class="stack-pill sm">Shader Graph</span>
             <span class="stack-pill sm">Custom HLSL</span>
             <span class="stack-pill sm">Editor Tooling</span>
+            <span class="stack-pill sm">URP</span>
           </div>
-          <p class="project-desc">Published on Unity Asset Store. Realistic wind-responsive grass shader with custom HLSL LOD blending and a custom Editor tool for mesh combining, object painting, and placement.</p>
+          <p class="project-desc">Unity editor tool and interactive shader pack to paint wind-animated, responsive vegetation onto any collider with mesh combining and URP renderer feature support.</p>
         </div>
         <div class="card-action-cue">
-          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Tool Demo</span>
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Tool Details</span>
+          <a href="https://assetstore.unity.com/packages/3d/props/tools/grass-shader-pack-383326" target="_blank" rel="noopener" class="card-action-btn" aria-label="View Grass Shader Pack on Unity Asset Store">View on Asset Store &#8599;</a>
+        </div>
+      </div>
+
+      <!-- Avatar Game (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-avatar-game" data-project-id="avatar-game" data-video="https://drive.google.com/file/d/1IcpRXUoxBV5EVJif4ma8Dk6uwDTOmQtI/view?usp=sharing" role="button" tabindex="0" aria-label="Open Avatar Game preview and video">
+        <div class="project-card-inner">
+          <span class="client-badge sm">GAME PROJECT</span>
+          <h3 class="project-name">Avatar Game</h3>
+          <div class="project-stack">
+            <span class="stack-pill sm">Unity</span>
+            <span class="stack-pill sm">C#</span>
+            <span class="stack-pill sm">Shader Graph</span>
+            <span class="stack-pill sm">AI / NavMesh</span>
+            <span class="stack-pill sm">Particle System</span>
+          </div>
+          <p class="project-desc">Story-based 3D combat game featuring melee and ranged enemy types, a dynamic dual-mode boss, and custom visual effects with interactive grass.</p>
+        </div>
+        <div class="card-action-cue">
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Details</span>
           <span class="cue-arrow">&#8599;</span>
         </div>
       </div>
 
-      <!-- Water Shader Pack (Clickable modal tab) -->
-      <div class="project-card hud-card project-card-clickable reveal" id="project-water-shader" data-project-id="water-shader" data-video="./videos/video1.mp4" role="button" tabindex="0" aria-label="Open Water Shader Pack preview and video">
+      <!-- Poly Mystery (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-poly-mystery" data-project-id="poly-mystery" data-video="https://drive.google.com/file/d/1-0Oh3TBuCiyM-6B0_FC5ZnpgAfmarjlC/view?usp=sharing" role="button" tabindex="0" aria-label="Open Poly Mystery preview and video">
         <div class="project-card-inner">
-          <span class="client-badge sm store-badge">UNITY ASSET STORE</span>
-          <h3 class="project-name">Water Shader Pack</h3>
+          <span class="client-badge sm">PERSONAL PROJECT</span>
+          <h3 class="project-name">Poly Mystery</h3>
           <div class="project-stack">
             <span class="stack-pill sm">Unity</span>
-            <span class="stack-pill sm">Shader Graph</span>
-            <span class="stack-pill sm">Custom HLSL</span>
+            <span class="stack-pill sm">C#</span>
+            <span class="stack-pill sm">Action RPG</span>
+            <span class="stack-pill sm">Inventory System</span>
+            <span class="stack-pill sm">ScriptableObjects</span>
           </div>
-          <p class="project-desc">Published on Unity Asset Store. Production-ready real-time water shader built with Shader Graph and custom HLSL for realistic water surface rendering.</p>
+          <p class="project-desc">Story-based 3D action RPG featuring combat-driven map progression, consumable health recovery, an inventory system, and stat-altering equipment sets.</p>
         </div>
         <div class="card-action-cue">
-          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Video &amp; Details</span>
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Details</span>
           <span class="cue-arrow">&#8599;</span>
         </div>
       </div>
+
+      <!-- Color Folks (Clickable modal tab) -->
+      <div class="project-card hud-card project-card-clickable reveal" id="project-color-folks" data-project-id="color-folks" data-video="https://drive.google.com/file/d/1WYr83tBDTWwP4ZHJmkyKONPBP18PSkr7/view?usp=sharing" role="button" tabindex="0" aria-label="Open Color Folks preview and video">
+        <div class="confidential-banner sm">
+          <div class="confidential-stripe"></div>
+          <div class="confidential-text"><span>&#128274;</span><span>[CONFIDENTIAL]</span></div>
+        </div>
+        <div class="project-card-inner">
+          <span class="client-badge sm">COMMERCIAL</span>
+          <h3 class="project-name">Color Folks</h3>
+          <div class="project-stack">
+            <span class="stack-pill sm">Unity</span>
+            <span class="stack-pill sm">C#</span>
+            <span class="stack-pill sm">Photon Fusion</span>
+            <span class="stack-pill sm">REST APIs</span>
+            <span class="stack-pill sm">OAuth</span>
+          </div>
+          <p class="project-desc">Mobile hide-and-seek game with dynamic character painting synced via Photon Fusion, featuring shooter-hunter mechanics and full backend auth.</p>
+        </div>
+        <div class="card-action-cue">
+          <span class="cue-main"><span class="cue-icon">&#9654;</span> View Details</span>
+          <span class="cue-arrow">&#8599;</span>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </section>
@@ -297,7 +371,7 @@
     <div class="job-card hud-card reveal" id="job-chicmic">
       <div class="job-header">
         <div class="job-meta">
-          <h3 class="job-title">Unity Software Engineer</h3>
+          <h3 class="job-title">ASSOCIATE UNITY DEVELOPER</h3>
           <p class="job-company">@ Chicmic &middot; Mohali, India</p>
           <p class="job-dates">09/2023 &#8212; Present</p>
         </div>
@@ -629,24 +703,34 @@
         <div class="modal-body-grid">
           <div class="modal-video-col">
             <div class="video-wrapper modal-video-wrapper">
+              <img id="modal-image" src="" alt="Project Preview" style="display:none;" />
               <video id="modal-video" controls preload="metadata" playsinline>
                 <source id="modal-video-source" src="./videos/video1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+              <iframe id="modal-iframe" src="" allow="autoplay; fullscreen" allowfullscreen style="display:none;" title="Project Video Preview"></iframe>
             </div>
             <div class="modal-video-hint">
               <span class="hint-dot"></span>
-              <span id="modal-video-filename">video1.mp4</span> &bull; Preview Video
+              <span id="modal-video-filename">video1.mp4</span> &bull; <span id="modal-video-label">Preview Video</span>
+              <a id="modal-video-external-link" href="#" target="_blank" rel="noopener" class="drive-ext-link" style="display:none;">Open in Drive &#8599;</a>
             </div>
           </div>
           <div class="modal-info-col">
+            <div class="modal-actions" id="modal-actions"></div>
+
             <h4 class="modal-section-heading">PROJECT OVERVIEW</h4>
             <p class="modal-description" id="modal-description"></p>
 
-            <h4 class="modal-section-heading">KEY HIGHLIGHTS</h4>
-            <ul class="modal-highlights" id="modal-highlights"></ul>
+            <div id="modal-role-container">
+              <h4 class="modal-section-heading">MY ROLE</h4>
+              <ul class="modal-highlights" id="modal-role-list"></ul>
+            </div>
 
-            <div class="modal-actions" id="modal-actions"></div>
+            <div id="modal-optimization-container" style="display: none;">
+              <h4 class="modal-section-heading">OPTIMIZATION &amp; PERFORMANCE</h4>
+              <ul class="modal-highlights modal-optimizations" id="modal-optimization-list"></ul>
+            </div>
           </div>
         </div>
       </div>
